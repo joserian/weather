@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="index.js" type="module" defer></script>
+</head> 
+<body>
+    <form id="container">
+        <h1>Weather</h1>
+        <p>view the weather in your city</p>
+        <div id="search-container">
+            <input list="suggestions" type="text" id="search-input" placeholder=">Brasília" autofocus value="">
+            <button id="search-button"><span class="material-symbols-outlined">search</button>
+            <datalist id="suggestions">
+                <option>Trombudo Central</option>
+                <option>Ponta Grossa</option>
+                <option>Dildo</option>
+                <option>Pintópolis</option>
+                <option>Rolândia</option>
+                <option>Anta Gorda</option>
+                <option>Fucking</option>
+            </datalist>
+        </div>
+
+        <div style="text-align: left; margin: 15px 0px;"><span id="city">type a city</span></div>
+
+        <div class="weather">
+            <div class="weather-icon">
+                <img  id="temp-icon"  src="https://openweathermap.org/img/wn/01d@2x.png" alt="temp icon" style="filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));">
+            </div>
+            <div class="weather-info" style="height:inherit"><span id="temp"></span></div>
+        </div>
+
+        <div class="weather">
+            <div class="weather-icon">
+                <span class="material-symbols-outlined" style="font-size:60px;">humidity_low</span>
+            </div>
+            <div class="weather-info" style="height:inherit"><span id="humidity"></span></div>
+        </div>
+        
+        <div class="weather">
+            <div class="weather-icon">
+                <span class="material-symbols-outlined" style="font-size:60px;">air</span>
+            </div>
+            <div class="weather-info" style="height:inherit"><span id="wind"></span></div>
+        </div>
+        </div>
+        
+    </form>
+    <div id="credits" style="position:absolute; bottom:0px; color:rgba(0, 0, 0, 0.39)">
+        by José Rian
+    </div>
+</body>
+</html>
