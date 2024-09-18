@@ -29,27 +29,40 @@
             </datalist>
         </div>
 
-        <div style="text-align: left; margin: 15px 0px;"><span id="city">type a city</span></div>
+        <div style="text-align: left; margin: 15px 0px;"><p id="city">type a city</p></div>
 
-        <div class="weather">
+        <div class="weather-info-container" title="temperature">
             <div class="weather-icon">
-                <img  id="temp-icon"  src="https://openweathermap.org/img/wn/01d@2x.png" alt="temp icon" style="filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));">
+                <img  id="temp-icon"  src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather icon" style="filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));">
             </div>
-            <div class="weather-info" style="height:inherit"><span id="temp"></span></div>
+            <div class="weather-info">
+                <p id="temp"></p>
+            </div>
+            
+            <span style="padding-left: 10px; border-right: solid 1px black; height: 60px"></span>
+            
+            <div class="weather-info-others">
+                <p id="feels-like"></p>
+                <p id="temp-max"></p>
+            </div>
+            
         </div>
-
-        <div class="weather">
+        <div class="weather-info-container" title="umidity">
             <div class="weather-icon">
                 <span class="material-symbols-outlined" style="font-size:60px;">humidity_low</span>
             </div>
-            <div class="weather-info" style="height:inherit"><span id="humidity"></span></div>
+            <div class="weather-info">
+                <p id="humidity"></p>
+            </div>
         </div>
         
-        <div class="weather">
+        <div class="weather-info-container" title="wind">
             <div class="weather-icon">
                 <span class="material-symbols-outlined" style="font-size:60px;">air</span>
             </div>
-            <div class="weather-info" style="height:inherit"><span id="wind"></span></div>
+            <div class="weather-info">
+                <p id="wind"></p>
+            </div>
         </div>
         </div>
         
